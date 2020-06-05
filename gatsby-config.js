@@ -1,6 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `@aravindballa's notes`,
+    title: `Sainadh's notes`,
   },
-  plugins: ['gatsby-theme-andy', `gatsby-plugin-postcss`],
+  plugins: [
+    {
+      resolve: 'gatsby-theme-andy',
+      options: {
+        'rootNote': 'atomic-habits'
+      }
+    }
+    , `gatsby-plugin-postcss`],
 };

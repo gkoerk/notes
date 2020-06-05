@@ -7,7 +7,7 @@ import BrainNote from './BrainNote';
 
 import '../../style.css';
 
-const NOTE_WIDTH = 576; // w-xl
+const NOTE_WIDTH = 650; // w-xl
 
 // A wrapper component to render the content of a page when stacked
 const StackedPageWrapper = ({

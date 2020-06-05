@@ -1,25 +1,88 @@
 /* purgecss start ignore */
 @tailwind base;
 
+/* My Custom CSS start*/
 body {
   height: 100vh;
+  font-family: Inter;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
+
+.note-container {
+  border-left: 1px solid rgba(0,0,0,0.05);
+}
+
+h1, h2, h3, h4 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.refs-box {
+  margin-top: 15px;
+}
+
+a .py-2 {
+  border-radius: 8px;
+  padding-left: 0.5rem;
+}
+
+a .py-2:hover {
+  background-color: #c6dbf4 !important;
+}
+
+.refs-box > h3{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.py-2 > h5 {
+  font-weight: bold;
+}
+
+/* Table */
+th, td {
+  padding: 4px 10px;
+  border: 1px solid #ddd;
+}
+
+table {
+  margin-top: 15px;
+  border-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+  .md\:max-w-xl {
+    max-width: 40rem !important;
+  }
+}
+
+/* My Custom CSS end */
 
 h1 {
   @apply text-3xl font-bold;
 }
+
 h2 {
   @apply text-xl font-bold;
 }
+
 h3 {
   @apply font-bold;
 }
+
 a {
-  @apply text-blue-600 underline;
+  @apply text-blue-600 no-underline;
 }
+
 a:hover {
   @apply text-blue-700 no-underline;
 }
+
 p {
   @apply mb-4;
 }

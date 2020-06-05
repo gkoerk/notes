@@ -7,7 +7,7 @@ import { LinkToStacked } from 'react-stacked-pages-hook';
 import components from 'gatsby-theme-andy/src/components/MdxComponents';
 import useWindowWidth from '../../utils/useWindowWidth';
 
-const NOTE_WIDTH = 576;
+const NOTE_WIDTH = 650;
 
 const BrainNote = ({ note }) => {
   const [width] = useWindowWidth();
@@ -31,7 +31,7 @@ const BrainNote = ({ note }) => {
     if (references.length > 0) {
       referenceBlock = (
         <>
-          <h3>Referred in</h3>
+          <h3>Backlinks</h3>
           <div className="mb-4">{references}</div>
           <hr className="mx-auto w-32" />
         </>
@@ -49,7 +49,7 @@ const BrainNote = ({ note }) => {
             id={ln.slug}
             className="w-64 p-4 bg-gray-100 rounded-lg shadow-lg border border-blue-200"
           >
-            <h5 className="mb-2">{ln.title}</h5>
+            <h4 className="mb-2">{ln.title}</h4>
             <p className="text-sm">{ln.childMdx.excerpt}</p>
           </div>
         );
